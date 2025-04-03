@@ -7,7 +7,7 @@ def compress_files_to_zips(input_folder, output_folder, max_size_mb):
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
-    # 获取所有的文件
+    # 获1取所有的文件
     files = [os.path.join(input_folder, f) for f in os.listdir(input_folder) if os.path.isfile(os.path.join(input_folder, f))]
     zip_index = 1
     zipf = None
